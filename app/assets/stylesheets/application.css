@@ -17,3 +17,9 @@
 header {
   background-image: "../img/1.jpg";
 }
+.black {
+  border-color: black;
+}
+.white {
+  border-color: white;
+}
