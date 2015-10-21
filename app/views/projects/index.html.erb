@@ -1,0 +1,48 @@
+<%= render "layouts/proNavbar" if @project_nav %>
+<section class="no-padding" id="completed">
+  <div class="container-fluid">
+    <br><br>
+    <h2 class="section-heading" align="center" style="color:black">Completed Projects</h2>
+    <hr class="light">
+      <div class="row no-gutter">
+        <div class="owl-carousel">
+          <div><%= render "projects/complete/zammysgfzone" %></div>
+          <div><%= render "projects/complete/chronoskit" %></div>
+          <div><%= render "projects/complete/forzadata" %></div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="no-padding" id="inprogress">
+  <div class="container-fluid">
+    <br><br>
+    <h2 class="section-heading" align="center" style="color:white">Current Projects</h2>
+    <hr class="light">
+      <div class="row no-gutter">
+        <div class="owl-carousel">
+          <!--  -->
+        </div>
+      </div>
+  </div>
+</section>
+
+<style type="text/css">
+  body {
+    /*background-color: white;*/
+  }
+</style>
+
+
+<script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
+ 
+      items : 3, //10 items above 1000px browser width
+      itemsDesktop : [1000,3], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,3], //2 items between 600 and 0
+      lazyLoad : true,
+      navigation : true
+
+    });
+</script>
