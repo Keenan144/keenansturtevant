@@ -20,5 +20,9 @@ class StaticPagesController < ApplicationController
 
   end
 
+  def resume
+    @no_nav = true
+  end
+
   
 end
