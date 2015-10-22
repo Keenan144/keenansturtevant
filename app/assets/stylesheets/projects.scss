@@ -3,19 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #secondNav{
+
   background-color: #29ABA4;
 }
 #completed {
   margin-top: 50px;
   background-color: #ECECEA;
-  padding-bottom: 50px;
+  padding-bottom: 240px;
+  padding-top: 150px;
 }
 #inprogress{
   background-color: #0071BC;
   padding-bottom: 50px;
+  padding-bottom: 240px;
+  padding-top: 150px;
 }
 
 .owl-carousel{
   display: block;
   width: 100%;
+}
+.project-name{
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 50.4px;
 }

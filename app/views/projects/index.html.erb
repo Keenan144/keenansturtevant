@@ -1,7 +1,6 @@
 <%= render "layouts/proNavbar" if @project_nav %>
 <section class="no-padding" id="completed">
   <div class="container-fluid">
-    <br><br>
     <h2 class="section-heading" align="center" style="color:black">Completed Projects</h2>
     <hr class="light">
       <div class="row no-gutter">
@@ -9,18 +8,25 @@
           <div><%= render "projects/complete/zammysgfzone" %></div>
           <div><%= render "projects/complete/chronoskit" %></div>
           <div><%= render "projects/complete/forzadata" %></div>
+          <div><%= render "projects/complete/spaceGame" %></div>
         </div>
       </div>
   </div>
 </section>
+
 <section class="no-padding" id="inprogress">
   <div class="container-fluid">
     <br><br>
     <h2 class="section-heading" align="center" style="color:white">Current Projects</h2>
     <hr class="light">
       <div class="row no-gutter">
-        <div class="owl-carousel">
-          <!--  -->
+        <div class="carousel">
+          <div><%= render "projects/current/htmlCheater" %></div>
+          <div><%= render "projects/current/railsCheater" %></div>
+          <div><%= render "projects/current/battleship" %></div>
+          <div><%= render "projects/current/cardsAgainst" %></div>
+          <div><%= render "projects/current/spaceGame" %></div>
+          <div><%= render "projects/current/toggle" %></div>
         </div>
       </div>
   </div>
@@ -34,8 +40,19 @@
 
 
 <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      autoPlay: 5000, //Set AutoPlay to 3 seconds
+    $(".carousel").owlCarousel({ // bottom
+      autoPlay: 6700, //Set AutoPlay to 6.7 seconds
+ 
+      items : 3, //10 items above 1000px browser width
+      itemsDesktop : [1000,3], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,3], //2 items between 600 and 0
+      lazyLoad : true,
+      navigation : true
+
+    });
+    $(".owl-carousel").owlCarousel({ // top
+      autoPlay: 10000, //Set AutoPlay to 10 seconds
  
       items : 3, //10 items above 1000px browser width
       itemsDesktop : [1000,3], //5 items between 1000px and 901px

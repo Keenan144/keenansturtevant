@@ -21,6 +21,7 @@
 
 
 <%= render "layouts/navbar" unless @no_nav %>
+<%= render "layouts/proNavbar" if @project_nav %>
 
 <%= yield %>
 
